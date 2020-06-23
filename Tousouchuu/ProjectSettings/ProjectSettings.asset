@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 18
-  productGUID: 0153d11d252f57e4382cb8c292dfbcc3
+  productGUID: b9a82f368b092ae4c92cb04f4bddda53
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -624,9 +624,9 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: f48f00a3-9be6-4d70-a5cd-215dc347a3d7
+  cloudProjectId: b846bd35-9051-4e3e-b268-633f8c39c255
   framebufferDepthMemorylessMode: 0
-  projectName: Tousouchuu (1)
+  projectName: Tousouchuu (2)
   organizationId: yoichi_futaba
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
