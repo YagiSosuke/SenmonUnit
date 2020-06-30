@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1051454327657304560}
   - component: {fileID: 8347229062896343495}
   - component: {fileID: 1218452777323046908}
+  - component: {fileID: 114190073482471816}
   m_Layer: 0
   m_Name: NezumiPrefab
   m_TagString: Untagged
@@ -123,3 +124,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   Camera: {fileID: 0}
+  PauseObject: {fileID: 0}
+--- !u!114 &114190073482471816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998181806104894356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a9acc8822efee940a8b0123a83e5f96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
