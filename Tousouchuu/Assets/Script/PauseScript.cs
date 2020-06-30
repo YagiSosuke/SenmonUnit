@@ -49,7 +49,6 @@ public class PauseScript : MonoBehaviour
     public void GoGameButtonClick()
     {
         PauseF = false;
-        Debug.Log("動く");
     }
         
     //ポーズ - タイトルボタンを押したら
