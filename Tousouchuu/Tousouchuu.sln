@@ -1,7 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{64C6E90B-405A-C259-5699-AB59B0D1BFA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIBehavior", "AIBehavior.csproj", "{AA2E4EA6-9609-F621-29CC-FA9BBD148341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIBehaviorNav_Editor", "AIBehaviorNav_Editor.csproj", "{49E90BE5-3B62-E9AD-12BB-9611C8BD4B6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{9BCA2C92-1841-D2E6-863F-3141C9EEC58C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,11 +19,20 @@ Global
 		{64C6E90B-405A-C259-5699-AB59B0D1BFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64C6E90B-405A-C259-5699-AB59B0D1BFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64C6E90B-405A-C259-5699-AB59B0D1BFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA2E4EA6-9609-F621-29CC-FA9BBD148341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA2E4EA6-9609-F621-29CC-FA9BBD148341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA2E4EA6-9609-F621-29CC-FA9BBD148341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA2E4EA6-9609-F621-29CC-FA9BBD148341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49E90BE5-3B62-E9AD-12BB-9611C8BD4B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49E90BE5-3B62-E9AD-12BB-9611C8BD4B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49E90BE5-3B62-E9AD-12BB-9611C8BD4B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49E90BE5-3B62-E9AD-12BB-9611C8BD4B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BCA2C92-1841-D2E6-863F-3141C9EEC58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BCA2C92-1841-D2E6-863F-3141C9EEC58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BCA2C92-1841-D2E6-863F-3141C9EEC58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BCA2C92-1841-D2E6-863F-3141C9EEC58C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

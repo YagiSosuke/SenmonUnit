@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class Chase_kirisawa : MonoBehaviour
 {
-    public GameObject target;
+    [SerializeField] GameObject target;
     private NavMeshAgent agent;
 
     void Start()
@@ -16,6 +16,6 @@ public class Chase_kirisawa : MonoBehaviour
 
     void Update()
     {
-        agent.destination = target.transform.position;
+        agent.SetDestination(target.transform.position);
     }
 }
