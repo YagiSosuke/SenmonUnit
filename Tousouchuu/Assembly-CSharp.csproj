@@ -56,11 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Chase_kirisawa.cs" />
+    <Compile Include="Assets\Script\CreditScene\GoTitleButton.cs" />
     <Compile Include="Assets\Script\NezumiScript.cs" />
     <Compile Include="Assets\Script\PauseScript.cs" />
+    <Compile Include="Assets\Script\RetryGame.cs" />
+    <Compile Include="Assets\Script\ReturnToTitle.cs" />
     <Compile Include="Assets\Script\SceneManegment.cs" />
     <Compile Include="Assets\Script\StartGame.cs" />
     <Compile Include="Assets\Script\Timer_kirisawa.cs" />
+    <Compile Include="Assets\Script\TitleScene\GoCreditButton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/1823122/Desktop/授業/３年/専門ユニットⅠ/コース/製作物/Unity_GitHub/Tousouchuu/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
