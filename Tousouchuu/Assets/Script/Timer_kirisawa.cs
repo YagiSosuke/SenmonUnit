@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Timer_kirisawa : MonoBehaviour
 {
-    float countTime = 0;
+    private float countTime;
 
     [SerializeField] private float Rimit = 180;//制限時間
+
+    static float RemainingTime;
 
     //　タイマー表示用テキスト
     private Text timerText;
@@ -16,12 +18,19 @@ public class Timer_kirisawa : MonoBehaviour
     void Start()
     {
         timerText = GetComponentInChildren<Text>();
+        countTime = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         countTime += Time.deltaTime; //スタートしてからの秒数を格納
-        timerText.text = (Rimit - countTime).ToString("F2"); //小数2桁にして表示
+        RemainingTime = Rimit - countTime;
+        timerText.text = RemainingTime.ToString("F2"); //小数2桁にして表示
+    }
+
+    public static float  GetTime()
+    {
+        return RemainingTime;
     }
 }
