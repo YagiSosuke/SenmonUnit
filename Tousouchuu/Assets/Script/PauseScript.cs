@@ -23,6 +23,12 @@ public class PauseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Escキーを押したらポーズ
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            PauseF = true;
+        }
+
         //ポーズになった時
         if (PauseF)
         {

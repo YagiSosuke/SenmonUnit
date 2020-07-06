@@ -16,6 +16,6 @@ public class Chase_kirisawa : MonoBehaviour
 
     void Update()
     {
-        //agent.destination = target.transform.position;
+        agent.destination = target.transform.position;
     }
 }

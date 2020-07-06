@@ -15,7 +15,6 @@ public class NezumiScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 0.05f;      //スピード設定
         Camera = GameObject.Find("Main Camera");        //カメラを格納
 
         PauseObject = GameObject.Find("Canvas");        //オブジェクトを格納
@@ -35,22 +34,22 @@ public class NezumiScript : MonoBehaviour
             //前に進む
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
-                this.transform.Translate(0, 0, speed);
+                this.transform.Translate(0, 0, speed * Time.deltaTime);
             }
             //後に進む
             if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
             {
-                this.transform.Translate(0, 0, -speed);
+                this.transform.Translate(0, 0, -speed * Time.deltaTime);
             }
             //右に進む
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
             {
-                this.transform.Translate(speed, 0, 0);
+                this.transform.Translate(speed * Time.deltaTime, 0, 0);
             }
             //左に進む
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
             {
-                this.transform.Translate(-speed, 0, 0);
+                this.transform.Translate(-speed * Time.deltaTime, 0, 0);
             }
         }
     }

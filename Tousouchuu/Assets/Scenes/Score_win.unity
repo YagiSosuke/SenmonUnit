@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 232671889}
   - component: {fileID: 232671888}
   - component: {fileID: 232671887}
+  - component: {fileID: 232671891}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -267,8 +268,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -332,6 +333,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232671885}
   m_CullTransparentMesh: 0
+--- !u!114 &232671891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232671885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e562426a25e780d4ca70cd7606bba190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyF: 0
 --- !u!1 &387264138
 GameObject:
   m_ObjectHideFlags: 0

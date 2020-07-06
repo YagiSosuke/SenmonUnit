@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 138672865}
   - component: {fileID: 138672864}
   - component: {fileID: 138672867}
+  - component: {fileID: 138672868}
   m_Layer: 5
   m_Name: TitleButton
   m_TagString: Untagged
@@ -364,8 +365,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -441,6 +442,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f794603e5798a4d479492aba435559e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &138672868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138672862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e562426a25e780d4ca70cd7606bba190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyF: 0
 --- !u!1 &288726612
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,9 +719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Title
-
-'
+  m_Text: "\u30BF\u30A4\u30C8\u30EB"
 --- !u!222 &611390051
 CanvasRenderer:
   m_ObjectHideFlags: 0
