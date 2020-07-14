@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TItle.unity
     guid: cb742e95ebd3b3b4daba15cd9ab5535a
   - enabled: 1
+    path: "Assets/Scenes/Tutorial\uFF11.unity"
+    guid: fc6771c43c421c54aadb03a9ee0975ae
+  - enabled: 1
+    path: Assets/Scenes/Tutorial2.unity
+    guid: 49651c2a00a9ea24986b9439fff08c75
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: f20aa50b085dc6548a6f42116da36c9c
   - enabled: 1
@@ -17,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credit.unity
     guid: d473cd784c44b02449443530434df4c5
+  - enabled: 1
+    path: Assets/Scenes/Losing.unity
+    guid: db9af64805a7c9b4295a876e931d6e91
+  - enabled: 1
+    path: Assets/Scenes/TItle.unity
+    guid: cb742e95ebd3b3b4daba15cd9ab5535a
+  - enabled: 1
+    path: Assets/Scenes/Losing.unity
+    guid: db9af64805a7c9b4295a876e931d6e91
+  - enabled: 1
+    path: Assets/Scenes/Score_win.unity
+    guid: 5ccbfc9fb45a5c449a1321aad0cad7fe
   m_configObjects: {}
