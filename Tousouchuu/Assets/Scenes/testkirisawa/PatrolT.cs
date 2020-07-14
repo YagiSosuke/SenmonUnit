@@ -35,7 +35,7 @@ public class PatrolT : MonoBehaviour
         GotoNextPoint();
 
         //追跡したいオブジェクトの名前を入れる
-        player = GameObject.Find("Player");
+        player = GameObject.Find("NezumiPrefab");
     }
 
 
