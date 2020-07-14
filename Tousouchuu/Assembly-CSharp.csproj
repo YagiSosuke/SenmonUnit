@@ -53,16 +53,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
      <Compile Include="Assets\Scenes\testkirisawa\idou.cs" />
-     <Compile Include="Assets\Script\BuckTutorial.cs" />
      <Compile Include="Assets\Script\Chase_kirisawa.cs" />
      <Compile Include="Assets\Script\CreditScene\GoTitleButton.cs" />
      <Compile Include="Assets\Script\GameOver.cs" />
      <Compile Include="Assets\Script\GoalScore.cs" />
-     <Compile Include="Assets\Script\GoTutorial.cs" />
      <Compile Include="Assets\Script\MainScene\NezumiScript.cs" />
      <Compile Include="Assets\Script\MainScene\PauseScript.cs" />
-     <Compile Include="Assets\Script\NextTutorial.cs" />
      <Compile Include="Assets\Script\RetryGame.cs" />
      <Compile Include="Assets\Script\ReturnToTitle.cs" />
      <Compile Include="Assets\Script\SceneManegment.cs" />
@@ -72,6 +70,11 @@
      <Compile Include="Assets\Script\Timer_kirisawa.cs" />
      <Compile Include="Assets\Script\TitleScene\ExitButton.cs" />
      <Compile Include="Assets\Script\TitleScene\GoCreditButton.cs" />
+     <Compile Include="Assets\Script\Tutorials\BuckTutorial.cs" />
+     <Compile Include="Assets\Script\Tutorials\GoTutorial.cs" />
+     <Compile Include="Assets\Script\Tutorials\NextTutorial.cs" />
+     <None Include="Assets\race-track-lake\readmore.txt" />
+     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/1823122/Desktop/授業/３年/専門ユニットⅠ/コース/製作物/Unity_GitHub/Tousouchuu/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
