@@ -107,4 +107,9 @@ public class PatrolT : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, quitRange);
     }
+
+    public bool GetTrak()
+    {
+        return tracking;
+    }
 }
