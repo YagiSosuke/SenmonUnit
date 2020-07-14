@@ -23,6 +23,12 @@ public class PatrolT : MonoBehaviour
     [SerializeField] float quitRange = 5f;
     [SerializeField] bool tracking = false;
 
+    ///original↓
+    ///
+    private bool PlayerDiscovery;
+    public AudioClip sound1;
+    AudioSource audioSource;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -36,6 +42,8 @@ public class PatrolT : MonoBehaviour
 
         //追跡したいオブジェクトの名前を入れる
         player = GameObject.Find("NezumiPrefab");
+        PlayerDiscovery = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -74,13 +82,18 @@ public class PatrolT : MonoBehaviour
         {
             //PlayerがtrackingRangeより近づいたら追跡開始
             if (distance < trackingRange)
-                tracking = true;
+            {
+                tracking = true;//追跡を開始する
+                audioSource.PlayOneShot(sound1);//開始時に1度だけ鳴く
+            }
 
 
             // エージェントが現目標地点に近づいてきたら、
             // 次の目標地点を選択します
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
+            {
                 GotoNextPoint();
+            }
         }
     }
 
