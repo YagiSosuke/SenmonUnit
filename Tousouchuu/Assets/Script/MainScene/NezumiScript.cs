@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/*ネズミのカーソル移動*/
+/*ネズミのキーボード移動*/
 
 public class NezumiScript : MonoBehaviour
 {
@@ -49,11 +49,6 @@ public class NezumiScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //カメラの設置
-        Camera.transform.position = new Vector3(this.transform.position.x,
-                                                this.transform.position.y+10,
-                                                this.transform.position.z);
-
         //ポーズ画面でない場合
         if (!pausescript.PauseF)
         {
@@ -124,9 +119,13 @@ public class NezumiScript : MonoBehaviour
                 animator.SetBool("RunF", true);     //走るアニメーションを再生
                 this.transform.Translate(0, 0, speed * Time.deltaTime);             //向いている方向に進む
             }
-
-
         }
+
+
+        //追従カメラの設置
+        Camera.transform.position = new Vector3(this.transform.position.x,
+                                                this.transform.position.y + 10,
+                                                this.transform.position.z);
     }
 
     //押されたキーの要素によって進む方向を決定
