@@ -5,19 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-   void Start()
-    {
- 
-    }
-
-    private void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Cat") 
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "Enemy") 
         {
             SceneManager.LoadScene("Losing");
         }
