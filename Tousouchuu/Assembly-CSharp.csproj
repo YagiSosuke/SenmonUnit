@@ -56,6 +56,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+    <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
     <Compile Include="Assets\Scenes\testkirisawa\idou.cs" />
     <Compile Include="Assets\Scenes\testkirisawa\PatrolT.cs" />
     <Compile Include="Assets\Script\Chase_kirisawa.cs" />
@@ -78,7 +86,11 @@
     <Compile Include="Assets\Script\Tutorials\GoTutorial.cs" />
     <Compile Include="Assets\Script\Tutorials\NextTutorial.cs" />
     <None Include="Assets\race-track-lake\readmore.txt" />
+    <None Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\race-track-lake\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+    <None Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+    <None Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/1823122/Desktop/授業/３年/専門ユニットⅠ/コース/製作物/Unity_GitHub/Tousouchuu/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
