@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 544261595}
   - component: {fileID: 544261594}
   - component: {fileID: 544261597}
+  - component: {fileID: 544261598}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -421,8 +422,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
-    m_PressedColor: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
+    m_HighlightedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.39215687, g: 0.39215687, b: 0.39215687, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -498,6 +499,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9596c3aa3c410b45b7555c29905694e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &544261598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544261592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e562426a25e780d4ca70cd7606bba190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KeyF: 0
 --- !u!1 &636098627
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +687,7 @@ RectTransform:
   m_GameObject: {fileID: 952278869}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 126330359}
   m_RootOrder: 0
