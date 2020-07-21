@@ -28,7 +28,7 @@ public class NezumiScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Camera = GameObject.Find("Main Camera");        //カメラを格納
+        Camera = GameObject.Find("CameraGroop");        //カメラを格納
 
         LookDirection = "Up";         //進む方向は最初は前
         BeforeLookVector = new Vector3(0, 0, 0);        //現在向いている方向
