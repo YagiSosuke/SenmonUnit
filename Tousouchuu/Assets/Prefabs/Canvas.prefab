@@ -385,8 +385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -368, y: -343}
-  m_SizeDelta: {x: 700, y: 100}
+  m_AnchoredPosition: {x: -318.2, y: -401.5}
+  m_SizeDelta: {x: 799.6, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7215083011013029206
 CanvasRenderer:
@@ -421,13 +421,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "WASD,\u5341\u5B57\u30AD\u30FC\u30FB\u30FB\u30FB\u79FB\u52D5"
+  m_Text: "WASD,\u5341\u5B57\u30AD\u30FC\u30FB\u30FB\u30FB\u79FB\u52D5\nEsc\u30AD\u30FC\u30FB\u30FB\u30FB\u30FB\u30FB\u30FB\u30FB\u30E1\u30CB\u30E5\u30FC"
 --- !u!1 &6446959986490843218
 GameObject:
   m_ObjectHideFlags: 0

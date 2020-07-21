@@ -20,6 +20,7 @@ public class ButtonFirstActive : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //キー操作になっていない && 十字キーかWASDを押すと、キー操作になる
         if(!KeyF && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) ||  Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
         {
