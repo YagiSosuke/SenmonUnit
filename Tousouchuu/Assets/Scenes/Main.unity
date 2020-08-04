@@ -4055,6 +4055,11 @@ PrefabInstance:
       propertyPath: PauseObject
       value: 
       objectReference: {fileID: 1071716867}
+    - target: {fileID: 1218452777323046908, guid: a56d104283916654bb3bdeff9a70a09f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2702823530015318326, guid: a56d104283916654bb3bdeff9a70a09f,
         type: 3}
       propertyPath: m_Camera
@@ -4084,6 +4089,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8347229062896343495, guid: a56d104283916654bb3bdeff9a70a09f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 8644083311531033092, guid: a56d104283916654bb3bdeff9a70a09f,
         type: 3}
@@ -5922,6 +5932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 3020270882309490074, guid: f487a2df5a67868499086ec545ca6c55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3020270882380974319, guid: f487a2df5a67868499086ec545ca6c55,
         type: 3}
