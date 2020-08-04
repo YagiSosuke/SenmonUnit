@@ -10,7 +10,9 @@ public class GameOver : MonoBehaviour
         Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Enemy") 
         {
-            SceneManager.LoadScene("Losing");
+            HPScript.ReceiveDamage();
+            if(HPScript.HP == 0)
+                SceneManager.LoadScene("Losing");
         }
     
     }
