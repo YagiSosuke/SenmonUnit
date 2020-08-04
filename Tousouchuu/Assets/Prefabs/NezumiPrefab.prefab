@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 1218452777323046908}
   - component: {fileID: 114190073482471816}
   - component: {fileID: 4808021136034406046}
+  - component: {fileID: 1252803313362917928}
   m_Layer: 0
   m_Name: NezumiPrefab
   m_TagString: Untagged
@@ -218,6 +219,21 @@ CapsuleCollider:
   m_Height: 0.9032446
   m_Direction: 1
   m_Center: {x: -0.0021989942, y: -0.061571658, z: -0.06377077}
+--- !u!114 &1252803313362917928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4998181806104894356}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7411caf97b1583468b3e6b2712d9913, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MouseObject: {fileID: 2354927792746684575}
+  speed: 10
+  Camera: {fileID: 0}
 --- !u!1001 &2353859562765578947
 PrefabInstance:
   m_ObjectHideFlags: 0
