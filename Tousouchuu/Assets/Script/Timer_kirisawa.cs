@@ -26,7 +26,7 @@ public class Timer_kirisawa : MonoBehaviour
     {
         countTime += Time.deltaTime; //スタートしてからの秒数を格納
         RemainingTime = Rimit - countTime;
-        timerText.text = RemainingTime.ToString("F2"); //小数2桁にして表示
+        timerText.text = RemainingTime.ToString("F2") + "秒"; //小数2桁にして表示
     }
 
     public static float  GetTime()

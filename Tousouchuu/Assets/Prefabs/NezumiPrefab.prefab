@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 1218452777323046908}
   - component: {fileID: 114190073482471816}
   - component: {fileID: 4808021136034406046}
+  - component: {fileID: 1252803313362917928}
   m_Layer: 0
   m_Name: NezumiPrefab
   m_TagString: Untagged
@@ -685,6 +686,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+
   m_GameObject: {fileID: 9011998708855021771}
   m_Enabled: 1
   m_EditorHideFlags: 0
