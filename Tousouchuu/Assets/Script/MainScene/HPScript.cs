@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class HPScript : MonoBehaviour
 {
-    public static float HP = 1f;            //ネズミのHP
+    public static float HP;            //ネズミのHP
     public static float Damage = 0.35f;          //ネコに当たった時、どれくらいダメージを受けるか
     GameObject MainCamera;      //メインカメラのオブジェクト
     Slider HPSlider;            //HPヲ表示するGUI
@@ -15,6 +15,7 @@ public class HPScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        HP = 1f;
         MainCamera = GameObject.Find("Main Camera");
         HPSlider = GameObject.Find("Slider").GetComponent<Slider>();
         transform.localScale = new Vector3(-1, 1, 1);
