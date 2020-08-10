@@ -14,6 +14,7 @@ public class ExitButton : MonoBehaviour
 
     GameObject STButton;        //スタートボタン
     GameObject YESButton;       //終了 - はいボタン
+    GameObject NOButton;       //終了 - いいえボタン
 
     ButtonFirstActive STFirstActive;        //スタートボタンのスクリプト
     ButtonFirstActive YESFirstActive;       //終了 - はいボタンのスクリプト
@@ -26,12 +27,15 @@ public class ExitButton : MonoBehaviour
         
         STButton = GameObject.Find("StartButton");   //スタートボタンを格納
         YESButton = GameObject.Find("YesButton");   //終了 - はいボタンを格納
+        NOButton = GameObject.Find("NoButton");   //終了 - いいえボタンを格納
 
         STFirstActive = STButton.GetComponent<ButtonFirstActive>();      //スクリプト格納
         YESFirstActive = YESButton.GetComponent<ButtonFirstActive>();     //スクリプト格納
 
         
         ExitPanel.transform.localPosition = Panel_pos;          //設定された初期位置にExitPanelを移動
+        YESButton.GetComponent<ButtonDown>().pos = YESButton.transform.position;
+        NOButton.GetComponent<ButtonDown>().pos = NOButton.transform.position;
         ExitPanel.SetActive(false);                             //ExitPanelを非アクティブにする
         
     }

@@ -224,7 +224,7 @@ public class NezumiScript : MonoBehaviour
 
         if (SpinCount < 1)
         {
-            SpinCount += 0.1f;
+            SpinCount += 0.2f;
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(BeforeLookVector), Quaternion.Euler(AfterLookVector), SpinCount);
         }
     }
