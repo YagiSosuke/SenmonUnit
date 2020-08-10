@@ -228,9 +228,4 @@ public class NezumiScript : MonoBehaviour
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(BeforeLookVector), Quaternion.Euler(AfterLookVector), SpinCount);
         }
     }
-
-    void OnCollisionEnter(Collision col)
-    {
-        Debug.Log("col.name = " + col.gameObject.name);
-    }
 }

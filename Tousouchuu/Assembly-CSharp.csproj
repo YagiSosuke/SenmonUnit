@@ -64,6 +64,7 @@
      <Compile Include="Assets\race-track-lake\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
      <Compile Include="Assets\Scenes\testkirisawa\idou.cs" />
      <Compile Include="Assets\Scenes\testkirisawa\PatrolT.cs" />
+     <Compile Include="Assets\Scenes\testkirisawa\testnescal.cs" />
      <Compile Include="Assets\Script\Chase_kirisawa.cs" />
      <Compile Include="Assets\Script\CreditScene\GoTitleButton.cs" />
      <Compile Include="Assets\Script\GameOver.cs" />
