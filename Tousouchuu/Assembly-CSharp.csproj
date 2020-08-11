@@ -73,6 +73,7 @@
      <Compile Include="Assets\Script\MainScene\MainSoundManeger.cs" />
      <Compile Include="Assets\Script\MainScene\NezumiScript.cs" />
      <Compile Include="Assets\Script\MainScene\PauseScript.cs" />
+     <Compile Include="Assets\Script\MainSoundScript.cs" />
      <Compile Include="Assets\Script\RetryGame.cs" />
      <Compile Include="Assets\Script\ReturnToTitle.cs" />
      <Compile Include="Assets\Script\SceneManegment.cs" />
