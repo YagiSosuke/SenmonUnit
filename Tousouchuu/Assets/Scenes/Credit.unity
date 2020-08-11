@@ -458,11 +458,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyF: 0
   Cursor: {fileID: 2140826949}
-  pos:
-  - {x: 0, y: -200, z: 0}
-  Length: 1
-  nowPos: 0
+  pos: {x: 0, y: 270, z: 0}
   UtoD: 0
+  eventSystem: {fileID: 2087679839}
 --- !u!114 &138672869
 MonoBehaviour:
   m_ObjectHideFlags: 0

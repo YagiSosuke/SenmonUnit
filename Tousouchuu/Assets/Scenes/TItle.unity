@@ -665,7 +665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
+    m_SelectOnUp: {fileID: 1642097346}
     m_SelectOnDown: {fileID: 1562395961}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -775,13 +775,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyF: 0
   Cursor: {fileID: 1026380044}
-  pos:
-  - {x: -270, y: 0, z: 0}
-  - {x: -270, y: -140, z: 0}
-  - {x: -270, y: -290, z: 0}
-  Length: 3
-  nowPos: 0
+  pos: {x: -270, y: 0, z: 0}
   UtoD: 1
+  eventSystem: {fileID: 2147472824}
 --- !u!114 &788475948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,12 +1400,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyF: 0
   Cursor: {fileID: 2131684020}
-  pos:
-  - {x: -300, y: 100, z: 0}
-  - {x: 300, y: 100, z: 0}
-  Length: 2
-  nowPos: 0
+  pos: {x: 0, y: 270, z: 0}
   UtoD: 0
+  eventSystem: {fileID: 2147472824}
 --- !u!114 &1269760497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,7 +2027,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 1562395961}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 788475943}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 2
@@ -2685,6 +2678,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140635037959880316, guid: 4bde11c94707b9745a70671ed772db87,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}

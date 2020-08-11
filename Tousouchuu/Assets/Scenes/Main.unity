@@ -5372,12 +5372,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyF: 0
   Cursor: {fileID: 696540221}
-  pos:
-  - {x: -270, y: 150, z: 0}
-  - {x: -270, y: 0, z: 0}
-  Length: 2
-  nowPos: 0
+  pos: {x: -270, y: 0, z: 0}
   UtoD: 1
+  eventSystem: {fileID: 1003490173}
 --- !u!1 &1574300105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3020196393578847399, guid: f487a2df5a67868499086ec545ca6c55,
