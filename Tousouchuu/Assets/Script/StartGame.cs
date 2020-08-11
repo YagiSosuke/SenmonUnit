@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        SceneManager.LoadScene("Main");
+        feadSC.fade("Main");
     }
     }
 

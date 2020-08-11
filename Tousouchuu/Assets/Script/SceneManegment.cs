@@ -18,11 +18,11 @@ public class SceneManegment : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.KeypadEnter))
             {
-                SceneManager.LoadScene("Main");
+                feadSC.fade("Main");
             }
             if (Input.GetKey(KeyCode.C))
             {
-                SceneManager.LoadScene("Credit");
+                feadSC.fade("Credit");
             }
         }
 
@@ -31,7 +31,7 @@ public class SceneManegment : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.KeypadEnter))
             {
-                SceneManager.LoadScene("Score");
+                feadSC.fade("Score");
             }
         }
 
@@ -40,7 +40,7 @@ public class SceneManegment : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.KeypadEnter))
             {
-                SceneManager.LoadScene("TItle");
+                feadSC.fade("TItle");
             }
         }
 
@@ -49,7 +49,7 @@ public class SceneManegment : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.KeypadEnter))
             {
-                SceneManager.LoadScene("TItle");
+                feadSC.fade("TItle");
             }
         }
     }
