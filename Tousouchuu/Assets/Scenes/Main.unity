@@ -3928,6 +3928,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 586571ead65a3244a9691609b3deee66,
         type: 3}
+    - target: {fileID: 3892099014015002039, guid: a32f8f5f48701ca44ba8c83c34da6895,
+        type: 3}
+      propertyPath: m_Text
+      value: "  \u79FB\u52D5  : WASD,\u5341\u5B57\u30AD\u30FC\n\u30E1\u30CB\u30E5\u30FC
+        : Esc\u30AD\u30FC"
+      objectReference: {fileID: 0}
     - target: {fileID: 5300990706491296155, guid: a32f8f5f48701ca44ba8c83c34da6895,
         type: 3}
       propertyPath: m_Text
@@ -4716,6 +4722,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651354194222191274, guid: a56d104283916654bb3bdeff9a70a09f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 8651354194222191274, guid: a56d104283916654bb3bdeff9a70a09f,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651354194222191274, guid: a56d104283916654bb3bdeff9a70a09f,
+        type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a56d104283916654bb3bdeff9a70a09f, type: 3}

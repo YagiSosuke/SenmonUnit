@@ -5,10 +5,13 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 //作成者　桐澤　2020/6/30
+//2020/8/11 八木 効果音系の処理を追加
 
 public class TextOutTime : MonoBehaviour
 {
     private float GoalTime;
+    [SerializeField] AudioSource audio;   //スピーカー用
+    [SerializeField] AudioClip[] clip;      //ランクによって最後の音が変わる
 
     [SerializeField] GameObject Player;//Playernameを表示
     Text PlayerText;
@@ -69,30 +72,37 @@ public class TextOutTime : MonoBehaviour
         RankTextC = RankC.GetComponent<Text>();
         if (GoalTime >= 0)
         {
+            audio.PlayOneShot(clip[6]);
             RankTextC.text = "ザコ";
         }
         if (GoalTime > 0)
         {
+            audio.PlayOneShot(clip[5]);
             RankTextC.text = "E";
         }
         if (GoalTime > 30)
         {
+            audio.PlayOneShot(clip[4]);
             RankTextC.text = "D";
         }
         if (GoalTime > 60)
         {
+            audio.PlayOneShot(clip[3]);
             RankTextC.text = "C";
         }
         if (GoalTime > 90)
         {
+            audio.PlayOneShot(clip[2]);
             RankTextC.text = "B";
         }
         if (GoalTime > 120)
         {
+            audio.PlayOneShot(clip[1]);
             RankTextC.text = "A";
         }
         if (GoalTime > 150)
         {
+            audio.PlayOneShot(clip[0]);
             RankTextC.text = "S";
         }
     }
