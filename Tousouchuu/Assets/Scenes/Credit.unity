@@ -1421,7 +1421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u9B54\u738B\u9B42\n\u3044\u3089\u3059\u3068\u3084\r\nOn-Jin \uFF5E\u97F3\u4EBA\uFF5E\t\n\u52B9\u679C\u97F3\u30E9\u30DC\t\n"
+  m_Text: "\u9B54\u738B\u9B42\n\u3044\u3089\u3059\u3068\u3084\r\nOn-Jin \uFF5E\u97F3\u4EBA\uFF5E\t\n\u52B9\u679C\u97F3\u30E9\u30DC\t\nphotoAC"
 --- !u!222 &1667732686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1652,7 +1652,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "https://maoudamashii.jokersounds.com\nhttps://www.irasutoya.com\thttps://on-jin.com/\r\thttps://soundeffect-lab.info/"
+  m_Text: "https://maoudamashii.jokersounds.com\nhttps://www.irasutoya.com\thttps://on-jin.com/\r\thttps://soundeffect-lab.info/\nhttps://www.photo-ac.com/"
 --- !u!222 &1854505250
 CanvasRenderer:
   m_ObjectHideFlags: 0
