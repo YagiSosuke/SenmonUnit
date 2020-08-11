@@ -7,6 +7,6 @@ public class BuckTutorial : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        SceneManager.LoadScene("Tutorial1");
+        feadSC.fade("Tutorial1");
     }
 }
