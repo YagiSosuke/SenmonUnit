@@ -12,31 +12,35 @@ public class ButtonFirstActive : MonoBehaviour
     public bool KeyF = false;          //キーボード操作になっているか
 
     [SerializeField] GameObject Cursor;      //カーソル
-    [SerializeField] List<Vector3> pos;      //座標系いろいろ
-    [SerializeField] int Length;     //配列サイズ
-    public int nowPos;     //カーソルがいる位置
+    [SerializeField] Vector3 pos;      //現在のボタンの座標からどれほどの位置にいるか
     [SerializeField] bool UtoD;         //縦のボタンの時
+    GameObject ActiveButton;            //選択状態にあるボタンを格納する
+    [SerializeField] EventSystem eventSystem;       //イベントシステムを取得用
 
     // Start is called before the first frame update
     void Start()
     {
         FirstObject = this.gameObject;          //アタッチしたオブジェクトを格納
         Cursor.gameObject.SetActive(false);                //消す
-        nowPos = 0;
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {     
+
 
         //キー操作になっていない && 十字キーかWASDを押すと、キー操作になる
-        if(!KeyF && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) ||  Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
+        if (!KeyF && (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftArrow) ||  Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)))
         {
             EventSystem.current.SetSelectedGameObject(FirstObject);         //ボタンをキーボードで操作時、最初に選択状態にする
             FirstObject.GetComponent<Button>().OnSelect(null);              //ハイライト対策
             Cursor.gameObject.SetActive(true);         //出す
-            Cursor.transform.localPosition = pos[0];        //位置合わせ
-            nowPos = -1;
+
+            //現在選択中のボタンを受け取る
+            ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
+            //カーソル表示
+            Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
+            
 
             KeyF = true;
         }
@@ -52,29 +56,47 @@ public class ButtonFirstActive : MonoBehaviour
         //縦移動の時
         if (UtoD)
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow) && Length > nowPos + 1)
+            if ((Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S)))
             {
-                nowPos++;
-                Cursor.transform.localPosition = pos[nowPos];
+                //現在選択中のボタンを変数に格納
+                ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
+                Debug.Log(ActiveButton);
+
+                //カーソル表示
+                Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
+                
             }
-            else if (Input.GetKeyDown(KeyCode.UpArrow) && 0 <= nowPos - 1)
+            else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
             {
-                nowPos--;
-                Cursor.transform.localPosition = pos[nowPos];
+                //現在選択中のボタンを変数に格納
+                ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
+                Debug.Log(ActiveButton);
+
+                //カーソル表示
+                Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
             }
         }
         //横移動の時
         else
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow) && Length > nowPos + 1)
+            if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)))
             {
-                nowPos++;
-                Cursor.transform.localPosition = pos[nowPos];
+
+                //現在選択中のボタンを変数に格納
+                ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
+                Debug.Log(ActiveButton);
+
+                //カーソル表示
+                Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
             }
-            else if (Input.GetKeyDown(KeyCode.LeftArrow) && 0 <= nowPos - 1)
+            else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)))
             {
-                nowPos--;
-                Cursor.transform.localPosition = pos[nowPos];
+                //現在選択中のボタンを変数に格納
+                ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
+                Debug.Log(ActiveButton);
+
+                //カーソル表示
+                Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
             }
         }
 

@@ -58,6 +58,7 @@ public class ExitButton : MonoBehaviour
     public void ExitButtonPush()
     {
         EventSystem.current.SetSelectedGameObject(null);       //ボタンの選択状態を解除
+        STButton.GetComponent<ButtonFirstActive>().enabled = false;         //コンポーネントを一時外す
         ExitF = true;
     }
 
@@ -77,6 +78,7 @@ public class ExitButton : MonoBehaviour
     {
         STFirstActive.CancelFrag();         //フラグを下げて置く(再びキーボードで選択できるように)
         YESFirstActive.CancelFrag();         //フラグを下げて置く(再びキーボードで選択できるように)
+        STButton.GetComponent<ButtonFirstActive>().enabled = true;         //コンポーネントを再びつける
         ExitF = false;
     }
 }
