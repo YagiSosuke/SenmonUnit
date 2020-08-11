@@ -11,6 +11,6 @@ public class GoTitleButton : MonoBehaviour
     //「タイトル」ボタンを押したら
     public void TitleButtonPush()
     {
-        SceneManager.LoadScene("Title");        //タイトル画面に遷移
+        feadSC.fade("Title");        //タイトル画面に遷移
     }
 }

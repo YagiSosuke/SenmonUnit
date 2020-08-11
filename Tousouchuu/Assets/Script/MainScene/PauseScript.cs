@@ -61,6 +61,6 @@ public class PauseScript : MonoBehaviour
     public void GoTitleButtonClick()
     {
         Time.timeScale = 1f;        //ゲーム上の時間を動かす(リスタート）
-        SceneManager.LoadScene("Title");
+        feadSC.fade("Title");
     }
 }

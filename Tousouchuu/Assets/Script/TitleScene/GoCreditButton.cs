@@ -11,6 +11,6 @@ public class GoCreditButton : MonoBehaviour
     //「クレジット」ボタンを押したら
     public void CreditButtonPush()
     {
-        SceneManager.LoadScene("Credit");       //クレジット画面に遷移
+        feadSC.fade("Credit");       //クレジット画面に遷移
     }
 }

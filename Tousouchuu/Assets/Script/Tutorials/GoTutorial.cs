@@ -7,7 +7,7 @@ public class GoTutorial : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        SceneManager.LoadScene("Tutorial1");
+        feadSC.fade("Tutorial1");
     }
 
 }

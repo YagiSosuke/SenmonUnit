@@ -110,6 +110,6 @@ public class TextOutTime : MonoBehaviour
 
     public void clicktitleON()
     {
-        SceneManager.LoadScene("Title");//おまけ　タイトルに移動する
+        feadSC.fade("Title");//おまけ　タイトルに移動する
     }
 }
