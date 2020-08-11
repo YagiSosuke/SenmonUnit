@@ -7,7 +7,7 @@ public class ReturnToTitle : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        feadSC.fade("Title");
+        SceneManager.LoadScene("Title");
     }
  
 }

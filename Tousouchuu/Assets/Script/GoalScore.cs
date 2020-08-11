@@ -12,7 +12,7 @@ public class GoalScore : MonoBehaviour
         //門内部に接触したオブジェクトがタグ"Player"だった場合
         if (other.gameObject.tag == "Player")
         {
-            feadSC.fade("Score_win");//スコアシーンに移動させる
+            SceneManager.LoadScene("Score_win");//スコアシーンに移動させる
             Debug.Log("ゴール接触");
         }
     }

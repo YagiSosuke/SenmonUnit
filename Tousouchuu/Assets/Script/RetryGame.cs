@@ -8,6 +8,6 @@ public class RetryGame : MonoBehaviour
 {
 public void OnRetry()
     {
-        feadSC.fade("Main");
+        SceneManager.LoadScene("Main");
     }
 }

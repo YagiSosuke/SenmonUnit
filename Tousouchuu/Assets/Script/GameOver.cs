@@ -14,7 +14,7 @@ public class GameOver : MonoBehaviour
         {
             HPscript.ReceiveDamage();
             if(HPScript.HP == 0)
-                feadSC.fade("Losing");
+                SceneManager.LoadScene("Losing");
         }
     
     }

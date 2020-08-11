@@ -7,6 +7,6 @@ public class NextTutorial : MonoBehaviour
 {
     public void LoadingNewScene()
     {
-        feadSC.fade("Tutorial2");
+        SceneManager.LoadScene("Tutorial2");
     }
 }
