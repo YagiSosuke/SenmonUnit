@@ -526,6 +526,9 @@ MonoBehaviour:
   pos: {x: -270, y: 0, z: 0}
   UtoD: 0
   eventSystem: {fileID: 636098629}
+  audiosource: {fileID: 2046977096}
+  selectsound: {fileID: 8300000, guid: 845ea124232e0af44a91cbcb802223db, type: 3}
+  correctsound: {fileID: 8300000, guid: 94e4083f5bc6b3649bbdbc1bed6ea424, type: 3}
 --- !u!114 &544261599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,6 +1328,12 @@ PrefabInstance:
 --- !u!224 &2046977095 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
+    type: 3}
+  m_PrefabInstance: {fileID: 2046977094}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2046977096 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4160539624326572112, guid: 4bde11c94707b9745a70671ed772db87,
     type: 3}
   m_PrefabInstance: {fileID: 2046977094}
   m_PrefabAsset: {fileID: 0}

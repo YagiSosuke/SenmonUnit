@@ -69,12 +69,15 @@
     <Compile Include="Assets\Scenes\testkirisawa\testnescal.cs" />
     <Compile Include="Assets\Script\Chase_kirisawa.cs" />
     <Compile Include="Assets\Script\CreditScene\GoTitleButton.cs" />
+    <Compile Include="Assets\Script\fadeob.cs" />
+    <Compile Include="Assets\Script\feadSC.cs" />
     <Compile Include="Assets\Script\GameOver.cs" />
     <Compile Include="Assets\Script\GoalScore.cs" />
     <Compile Include="Assets\Script\MainScene\HPScript.cs" />
     <Compile Include="Assets\Script\MainScene\MainSoundManeger.cs" />
     <Compile Include="Assets\Script\MainScene\NezumiScript.cs" />
     <Compile Include="Assets\Script\MainScene\PauseScript.cs" />
+    <Compile Include="Assets\Script\MainScene\RandomGole.cs" />
     <Compile Include="Assets\Script\MainSoundScript.cs" />
     <Compile Include="Assets\Script\RetryGame.cs" />
     <Compile Include="Assets\Script\ReturnToTitle.cs" />

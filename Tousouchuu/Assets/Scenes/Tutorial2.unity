@@ -475,6 +475,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 575668346}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &575668349 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4160539624326572112, guid: 4bde11c94707b9745a70671ed772db87,
+    type: 3}
+  m_PrefabInstance: {fileID: 575668346}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &801513268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,6 +1239,9 @@ MonoBehaviour:
   pos: {x: -270, y: 0, z: 0}
   UtoD: 0
   eventSystem: {fileID: 1532260077}
+  audiosource: {fileID: 575668349}
+  selectsound: {fileID: 8300000, guid: 845ea124232e0af44a91cbcb802223db, type: 3}
+  correctsound: {fileID: 8300000, guid: 94e4083f5bc6b3649bbdbc1bed6ea424, type: 3}
 --- !u!114 &1661204686
 MonoBehaviour:
   m_ObjectHideFlags: 0
