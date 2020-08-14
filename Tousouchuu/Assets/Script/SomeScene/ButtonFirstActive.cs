@@ -17,11 +17,16 @@ public class ButtonFirstActive : MonoBehaviour
     GameObject ActiveButton;            //選択状態にあるボタンを格納する
     [SerializeField] EventSystem eventSystem;       //イベントシステムを取得用
 
+    [SerializeField] AudioSource audiosource;
+    [SerializeField] AudioClip selectsound;  //選択音
+    [SerializeField] AudioClip correctsound;  //決定音
+
+
     // Start is called before the first frame update
     void Start()
     {
         FirstObject = this.gameObject;          //アタッチしたオブジェクトを格納
-        Cursor.gameObject.SetActive(false);                //消す
+        Cursor.gameObject.SetActive(false);                //消す        
     }
 
     // Update is called once per frame
@@ -35,6 +40,7 @@ public class ButtonFirstActive : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(FirstObject);         //ボタンをキーボードで操作時、最初に選択状態にする
             FirstObject.GetComponent<Button>().OnSelect(null);              //ハイライト対策
             Cursor.gameObject.SetActive(true);         //出す
+            audiosource.PlayOneShot(selectsound);
 
             //現在選択中のボタンを受け取る
             ActiveButton = eventSystem.currentSelectedGameObject.gameObject;
@@ -50,6 +56,10 @@ public class ButtonFirstActive : MonoBehaviour
             KeyF = false;
         }
 
+        if(KeyF && Input.GetKeyDown(KeyCode.Space))
+        {
+            audiosource.PlayOneShot(correctsound);
+        }
 
 
         //カーソルを移動させるスクリプト
@@ -64,7 +74,8 @@ public class ButtonFirstActive : MonoBehaviour
 
                 //カーソル表示
                 Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
-                
+
+                audiosource.PlayOneShot(selectsound);
             }
             else if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
             {
@@ -74,6 +85,8 @@ public class ButtonFirstActive : MonoBehaviour
 
                 //カーソル表示
                 Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
+
+                audiosource.PlayOneShot(selectsound);
             }
         }
         //横移動の時
@@ -88,6 +101,8 @@ public class ButtonFirstActive : MonoBehaviour
 
                 //カーソル表示
                 Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
+
+                audiosource.PlayOneShot(selectsound);
             }
             else if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)))
             {
@@ -97,6 +112,8 @@ public class ButtonFirstActive : MonoBehaviour
 
                 //カーソル表示
                 Cursor.transform.localPosition = new Vector3(ActiveButton.transform.localPosition.x + pos.x, ActiveButton.transform.localPosition.y + pos.y, ActiveButton.transform.localPosition.z + pos.z);
+
+                audiosource.PlayOneShot(selectsound);
             }
         }
 

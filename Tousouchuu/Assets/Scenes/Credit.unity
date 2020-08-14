@@ -146,7 +146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -175}
+  m_AnchoredPosition: {x: 449, y: -175}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17435452
@@ -458,9 +458,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyF: 0
   Cursor: {fileID: 2140826949}
-  pos: {x: 0, y: 270, z: 0}
+  pos: {x: -270, y: 0, z: 0}
   UtoD: 0
   eventSystem: {fileID: 2087679839}
+  audiosource: {fileID: 2140826950}
+  selectsound: {fileID: 8300000, guid: 845ea124232e0af44a91cbcb802223db, type: 3}
+  correctsound: {fileID: 8300000, guid: 94e4083f5bc6b3649bbdbc1bed6ea424, type: 3}
 --- !u!114 &138672869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,7 +912,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -175}
+  m_AnchoredPosition: {x: 449, y: -175}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &960027636
@@ -1233,7 +1236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -175}
+  m_AnchoredPosition: {x: 449, y: -175}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1422559072
@@ -1421,7 +1424,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7D20\u6750\u540D"
+  m_Text: "\u9B54\u738B\u9B42\n\u3044\u3089\u3059\u3068\u3084\r\nOn-Jin \uFF5E\u97F3\u4EBA\uFF5E\t\n\u52B9\u679C\u97F3\u30E9\u30DC\t\nphotoAC"
 --- !u!222 &1667732686
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1464,7 +1467,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -175}
+  m_AnchoredPosition: {x: 449, y: -175}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1751376027
@@ -1618,8 +1621,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -175}
-  m_SizeDelta: {x: 500, y: 300}
+  m_AnchoredPosition: {x: 657.2, y: -175}
+  m_SizeDelta: {x: 916.3, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1854505249
 MonoBehaviour:
@@ -1652,7 +1655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "URL(\u5FC5\u8981\u3067\u3042\u308C\u3070)"
+  m_Text: "https://maoudamashii.jokersounds.com\nhttps://www.irasutoya.com\thttps://on-jin.com/\r\thttps://soundeffect-lab.info/\nhttps://www.photo-ac.com/"
 --- !u!222 &1854505250
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1887,7 +1890,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 667.2727, y: -684.0909}
+  m_AnchoredPosition: {x: 588, y: -684.0909}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2001830273
@@ -1928,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 667.2727, y: -456.81818}
+  m_AnchoredPosition: {x: 588, y: -456.81818}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2001830275
@@ -2077,12 +2080,12 @@ PrefabInstance:
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
@@ -2102,17 +2105,17 @@ PrefabInstance:
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -334
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -200
+      value: -327
       objectReference: {fileID: 0}
     - target: {fileID: 5140635037959880317, guid: 4bde11c94707b9745a70671ed772db87,
         type: 3}
@@ -2165,6 +2168,12 @@ RectTransform:
 --- !u!1 &2140826949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5140635037959880316, guid: 4bde11c94707b9745a70671ed772db87,
+    type: 3}
+  m_PrefabInstance: {fileID: 2140826947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &2140826950 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4160539624326572112, guid: 4bde11c94707b9745a70671ed772db87,
     type: 3}
   m_PrefabInstance: {fileID: 2140826947}
   m_PrefabAsset: {fileID: 0}

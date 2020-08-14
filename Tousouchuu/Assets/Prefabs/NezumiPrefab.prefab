@@ -200,7 +200,6 @@ GameObject:
   - component: {fileID: 1218452777323046908}
   - component: {fileID: 114190073482471816}
   - component: {fileID: 4808021136034406046}
-  - component: {fileID: 1252803313362917928}
   m_Layer: 0
   m_Name: NezumiPrefab
   m_TagString: Untagged
@@ -313,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9acc8822efee940a8b0123a83e5f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HPscript: {fileID: 0}
 --- !u!136 &4808021136034406046
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -439,6 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1077829fa202d45b9f6f19f09a98e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  MouseCrySound: {fileID: 0}
 --- !u!1 &6117217034816378572
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +686,6 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-
   m_GameObject: {fileID: 9011998708855021771}
   m_Enabled: 1
   m_EditorHideFlags: 0
