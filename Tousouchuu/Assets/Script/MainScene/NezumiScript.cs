@@ -26,6 +26,8 @@ public class NezumiScript : MonoBehaviour
 
     Animator animator;                  //ネズミのアニメーター
 
+    GameOver gameover;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,13 +47,15 @@ public class NezumiScript : MonoBehaviour
         pausescript = PauseObject.GetComponent<PauseScript>();      //スクリプトを格納
 
         animator = MouseObject.GetComponent<Animator>();            //鼠のアニメーター
+
+        gameover = this.gameObject.GetComponent<GameOver>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //ポーズ画面でない場合
-        if (!pausescript.PauseF)
+        //ポーズ画面でない場合かつしんでない場合
+        if (!pausescript.PauseF && !gameover.DeadF)
         {
             //前に進む
             if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
