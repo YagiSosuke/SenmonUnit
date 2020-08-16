@@ -8,12 +8,12 @@ using UnityEngine.UI;
 
 public class feadSC : MonoBehaviour
 {
-    private static GameObject fadeimage;
+    [SerializeField] public static GameObject fadeimage;
     private static GameObject F;
     // Start is called before the first frame update
     void Start()
     {
-        fadeimage = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/fade.prefab");
+        fadeimage = GameObject.Find("fade");
     }
 
     // Update is called once per frame
