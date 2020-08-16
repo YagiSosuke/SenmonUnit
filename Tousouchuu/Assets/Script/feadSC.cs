@@ -24,6 +24,7 @@ public class feadSC : MonoBehaviour
 
     public static void fade(string name)
     {
+        fadeimage = GameObject.Find("fade");
         SceneManager.sceneLoaded += GameSceneLoaded;
         F = Instantiate(fadeimage, Vector3.zero, Quaternion.identity, GameObject.Find("Canvas").transform);
         F.GetComponent<fadeob>().ONfade(name);
@@ -32,6 +33,7 @@ public class feadSC : MonoBehaviour
 
     private static void GameSceneLoaded(Scene next, LoadSceneMode mode)
     {
+        fadeimage = GameObject.Find("fade");
         F = Instantiate(fadeimage, Vector3.zero, Quaternion.identity, GameObject.Find("Canvas").transform);
         F.GetComponent<fadeob>().OFFfade();
         SceneManager.sceneLoaded -= GameSceneLoaded;

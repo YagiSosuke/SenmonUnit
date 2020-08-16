@@ -60,7 +60,9 @@ public class PauseScript : MonoBehaviour
     //ポーズ - タイトルボタンを押したら
     public void GoTitleButtonClick()
     {
+        PauseF = false;
         Time.timeScale = 1f;        //ゲーム上の時間を動かす(リスタート）
+        Debug.Log("titleへ");
         feadSC.fade("Title");
     }
 }
