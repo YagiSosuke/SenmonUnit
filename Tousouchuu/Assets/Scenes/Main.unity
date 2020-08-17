@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 64
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -4644,7 +4644,12 @@ PrefabInstance:
     - target: {fileID: 6037713261639515929, guid: a32f8f5f48701ca44ba8c83c34da6895,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1020
+      value: 1592.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037713261639515929, guid: a32f8f5f48701ca44ba8c83c34da6895,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6863952806007524485, guid: a32f8f5f48701ca44ba8c83c34da6895,
         type: 3}
@@ -4776,6 +4781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1020
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257493810876959416, guid: a32f8f5f48701ca44ba8c83c34da6895,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7257493810876959418, guid: a32f8f5f48701ca44ba8c83c34da6895,
         type: 3}
